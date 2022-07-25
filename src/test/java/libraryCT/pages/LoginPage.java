@@ -19,6 +19,9 @@ public class LoginPage {
     @FindBy(css = "button[type='submit']")
     public WebElement signInBtn;
 
+    @FindBy(xpath = "//*[@id=\"login-form\"]/div[2]/div")
+    public WebElement wrongEmailPasswordMsg;
+
     public String getTitle(){
         return Driver.getDriver().getTitle();
     }

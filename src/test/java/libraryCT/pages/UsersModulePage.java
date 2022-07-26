@@ -11,6 +11,12 @@ public class UsersModulePage {
         PageFactory.initElements(Driver.getDriver(),this);
     }
 
+    @FindBy(xpath = "//a[@href='#users']")
+    public WebElement usersTab;
+
+    @FindBy(xpath = "//*[@id=\'tbl_users\']/tbody/tr[1]/td[3]")
+    public WebElement firstRowname;
+
     @FindBy(css = "a[class=\'btn btn-lg btn-outline btn-primary btn-sm\']")
     public WebElement addUser;
 

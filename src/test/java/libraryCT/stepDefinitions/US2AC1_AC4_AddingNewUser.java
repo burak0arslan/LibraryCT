@@ -11,7 +11,7 @@ import libraryCT.utilities.ConfigurationReader;
 import libraryCT.utilities.Driver;
 import org.junit.Assert;
 
-public class US2AC1_AC4 {
+public class US2AC1_AC4_AddingNewUser {
     LoginPage login = new LoginPage();
     Faker faker = new Faker();
     UsersModulePage userTab = new UsersModulePage();
@@ -50,7 +50,7 @@ public class US2AC1_AC4 {
     @Then("verify a new user is created")
     public void verify_a_new_user_is_created() {
         String actualName = userTab.firstRowname.getText();
-        BrowserUtilities.waitFor(3);
+        BrowserUtilities.waitForPageToLoad(3);
         Assert.assertEquals("User creation not verified!", "G25_TestUser", actualName);
     }
 }

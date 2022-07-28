@@ -18,11 +18,11 @@ public class US1AC1LibrarianLogin extends BasePage {
         Driver.getDriver().get(ConfigurationReader.getProperty("env"));
 
     }
-    @Then("verify that the title is {string}")
-    public void verify_that_the_title_is(String expectedTitle) {
+    @Then("verify that the title is Login - Library")
+    public void verify_that_the_title_is() {
         String actualTitle = Driver.getDriver().getTitle();
-        expectedTitle = "Login - Library";
-        Assert.assertEquals("Tittle Verification Failed!", expectedTitle, actualTitle);
+
+        Assert.assertEquals("Tittle Verification Failed!", "Login - Library", actualTitle);
     }
     @When("librarian enters valid email address and password")
     public void librarian_enters_valid_email_address_and_password() {

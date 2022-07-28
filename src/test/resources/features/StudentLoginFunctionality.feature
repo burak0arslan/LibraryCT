@@ -1,7 +1,7 @@
 Feature: Student Login Functionality
   As a student user I should be able to login to LibraryCT
 
-  @StudentLogin
+  @StudentLogin @test @testExecution @B26G25-82
   Scenario: Student Login
     Given student is on the login Page
     Then verify that the URL is "https://library2.cybertekschool.com/login.html"

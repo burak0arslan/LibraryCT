@@ -30,8 +30,8 @@ public class StudentLoginFunctionality {
         studentLogin.signInButton.click();
         System.out.println("Sign in button click successful");
     }
-    @Then("verify that there are {int} models on the page")
-    public void verify_that_there_are_models_on_the_page(Integer int1) {
+    @Then("verify that there are 2 models on the page")
+    public void verify_that_there_are_models_on_the_page() {
         Assert.assertTrue("Books", studentLogin.booksModule.isDisplayed());
         Assert.assertTrue("Borrowing Books", studentLogin.borrowingBooksModule.isDisplayed());
 

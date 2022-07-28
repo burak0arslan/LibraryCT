@@ -10,7 +10,7 @@ import libraryCT.utilities.ConfigurationReader;
 import libraryCT.utilities.Driver;
 
 
-public class AddNewUserStepDef {
+public class AddNewBookStepDef {
 
     AddNewUserPage addNewUserPage = new AddNewUserPage();
     LoginPage loginPage = new LoginPage();

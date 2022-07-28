@@ -1,5 +1,5 @@
 Feature: Adding a new user to the system.
-@AddingUser
+@AddingUser @test @testExecution @B26G25-84
   Scenario: Librarian should be able to add a new user.
     Given librarian is on the homePage_2
     When librarian click User module

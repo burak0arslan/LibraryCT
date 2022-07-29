@@ -49,8 +49,10 @@ public class US2AC1_AC4_AddingNewUser {
 
     @Then("verify a new user is created")
     public void verify_a_new_user_is_created() {
-        String actualName = userTab.firstRowname.getText();
+
         BrowserUtilities.waitForPageToLoad(3);
+
+        String actualName = userTab.firstRowname.getText();
         Assert.assertEquals("User creation not verified!", "G25_TestUser", actualName);
     }
 }
